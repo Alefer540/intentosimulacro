@@ -3,4 +3,5 @@ package com.example.demo
 import org.springframework.data.jpa.repository.JpaRepository
 
 interface MensajeRepository:JpaRepository<Mensaje,Int>
-interface UsuarioRepository:JpaRepository<Usuario,Int>
+interface UsuarioRepository:JpaRepository<Usuario,String>
+interface AdminsRepository:JpaRepository<Admin,String>

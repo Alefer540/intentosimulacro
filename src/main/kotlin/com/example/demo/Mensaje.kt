@@ -5,10 +5,10 @@ import javax.persistence.Entity
 import javax.persistence.GeneratedValue
 import javax.persistence.Id
 @Entity
-data class Mensaje( var texto:String,var Usuario:String,var rt:Int) {
+data class Mensaje( var texto:String,var usuarioId:String) {
     @Id
     @GeneratedValue
-    var idMensaje=0
+    var id=0
     override fun toString():String{
         val gson= Gson()
         return gson.toJson(this)

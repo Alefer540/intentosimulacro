@@ -7,9 +7,9 @@ import org.springframework.context.annotation.Configuration
 @Configuration
 class Database {
     @Bean
-    fun initDatabase(usuarioRepository:UsuarioRepository,mensajeRepository:MensajeRepository):CommandLineRunner{
+    fun initDatabase(adminsRepository: AdminsRepository):CommandLineRunner{
         return CommandLineRunner{
-
+            adminsRepository.save(Admin("DAM2","123456"))
         }
     }
 
